@@ -4,7 +4,17 @@
 using namespace std;
 
 int main(){
-void itc_name();
-void itc_fio();
+
+itc_name();
+
+itc_fio();
+
+int k;
+k = itc_abs(-4);
+cout << k << endl;
+
+double c;
+c = itc_fabs(-4.8);
+cout << c << endl;
 
 }

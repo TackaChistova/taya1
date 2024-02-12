@@ -1,7 +1,9 @@
-#ifndef FILEHEADED_H_INCLUDED
-#define FILEHEADED_H_INCLUDED
+#ifndef EASY_H_INCLUDED
+#define EASY_H_INCLUDED
 
 void itc_name();
 void itc_fio();
+int itc_abs(int num);
+double itc_fabs(double num);
 
-#endif // FILEHEADED_H_INCLUDED
+#endif // EASY_H_INCLUDED
