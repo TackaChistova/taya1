@@ -11,5 +11,9 @@ int itc_max(int num, int num2);
 int itc_min(int num, int num2);
 double itc_fmax(double num, double num2);
 double itc_fmin(double num, double num2);
+int itc_sqrt(int num);
+int itc_skv(int num);
+int itc_spr(int a, int b);
+int itc_str(int a, int b, int c);
 
 #endif // EASY_H_INCLUDED
