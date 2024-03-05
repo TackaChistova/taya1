@@ -2,6 +2,7 @@
 
 using namespace std;
 
+//12
 int itc_sqrt(int num){
 int kv = 1;
 while(kv * kv < num){
@@ -13,7 +14,7 @@ if(kv * kv == num){
 return -1;
 }
 
-
+//13
 int itc_skv(int num){
 if(num > 0){
     return num * num;
@@ -34,39 +35,14 @@ else{
 
 }
 
+
+//14
 int itc_str(int a, int b, int c){
 int maxi;
 int p = (a + b + c) / 2;
-if(a > 0 && b > 0 && c > 0){
-    if(a >= b && a >= c){
-        if( a < (b + c)){
+if((a > 0 && b > 0 && c > 0) && (a + b > c && c + b > a && c + a > b)){
             return itc_sqrt(p * (p - a) * (p - b) * (p - c));
         }
-        else{
-            return -1;
-        }
-    }
-
-    if(b >= a && b >= c){
-        maxi = b;
-        if( maxi < (a + c)){
-            return itc_sqrt(p * (p - a) * (p - b) * (p - c));
-        }
-        else{
-            return -1;
-        }
-    }
-    if(c >= a && c >= b){
-        maxi = c;
-        if( maxi < (b + c)){
-            return itc_sqrt(p * (p - a) * (p - b) * (p - c));
-        }
-        else{
-            return -1;
-        }
-}
-
-}
 else{
     return -1;
 }
