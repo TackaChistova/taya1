@@ -5,6 +5,9 @@ using namespace std;
 //11
 int itc_sqrt(int num){
 int kv = 1;
+if(num <= 0){
+    return -1;
+}
 while(kv * kv < num){
     kv++;
 }
