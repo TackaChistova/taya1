@@ -52,4 +52,3 @@ c = num % 10;
 v = a * 100 + b * 10 + c;
 return v;
 }
-
