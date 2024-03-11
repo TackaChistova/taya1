@@ -16,5 +16,8 @@ int itc_skv(int num);
 int itc_spr(int a, int b);
 int itc_str(int a, int b, int c);
 double itc_scir(int radius);
+double itc_pow(int num, int step);
+bool itc_ispositive(int num);
+bool itc_ispositive_d(double num);
 
 #endif // EASY_H_INCLUDED

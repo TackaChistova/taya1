@@ -4,7 +4,7 @@ using namespace std;
 
 //11
 int itc_sqrt(int num){
-int kv = 1;
+long long  kv = 1;
 if(num <= 0){
     return -1;
 }
