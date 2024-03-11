@@ -3,24 +3,27 @@
 using namespace std;
 
 double itc_pow(int num, int step){
-if(step == 1){
-    return 0;
-}
-int i;
-int n = num;
-if( step < 0){
-    for(i = 0; i < step - 1; i++){
-        n *= num;
+int b = num;
+if(step < 0){
+    step = step*-1;
+    while(step >1){
+        num = num * b;
+        step--;
     }
-    return 1.0 / n;
+    return 1.0/num;
+}
+if(step > 0){
+    while(step > 1){
+        num = num * b;
+        step--;
+    }
+    return num;
+}
+if(step == 0){
+    return 1;
+}
 }
 
-for(i = 0; i < step - 1; i++){
-    n *= num;
-}
-return n;
-
-}
 
 bool itc_ispositive(int num){
 if(num > 0){

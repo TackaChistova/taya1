@@ -4,17 +4,16 @@ using namespace std;
 
 //11
 int itc_sqrt(int num){
-long long  kv = 1;
-if(num <= 0){
-    return -1;
-}
+long long  kv = 0;
 while(kv * kv < num){
     kv++;
 }
 if(kv * kv == num){
     return kv;
 }
-return -1;
+else{
+    return -1;
+}
 }
 
 //12
@@ -52,6 +51,10 @@ else{
 }
 }
 
+
+
+
+//15
 double itc_scir(int radius){
 if(radius < 0){
     return -1;
