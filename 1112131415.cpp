@@ -42,10 +42,10 @@ else{
 //14
 int itc_str(int a, int b, int c){
 int maxi;
-int p = (a + b + c) / 2;
-if(p % 2 != 0){
-    return -1;
+if((a + b + c) % 2 != 0){
+ return -1;
 }
+int p = (a + b + c) / 2;
 if((a > 0 && b > 0 && c > 0) && (a + b > c && c + b > a && c + a > b)){
             return itc_sqrt(p * (p - a) * (p - b) * (p - c));
         }
